@@ -1,4 +1,3 @@
-
 /* Estilos gerais */
 body {
     font-family: Arial, sans-serif;
@@ -9,31 +8,31 @@ body {
 }
 
 .container {
-	max-width: 1200px;
+    max-width: 1200px;
     width: 80%;
     margin: 0 auto;
-	display: flex; /* Usando Flexbox para alinhar os cartões em uma linha */
-    flex-wrap: wrap; /* Permitir que os cartões quebrem para a próxima linha se necessário */
-    justify-content: space-between; /* Distribuir os cartões igualmente ao longo do eixo principal */
-	padding: 0 20px;
+    display: flex;
+    /* Usando Flexbox para alinhar os cartões em uma linha */
+    flex-wrap: wrap;
+    /* Permitir que os cartões quebrem para a próxima linha se necessário */
+    justify-content: space-between;
+    /* Distribuir os cartões igualmente ao longo do eixo principal */
+    padding: 0 20px;
 }
-.quem-somos,
-        .historia {
-            text-align: justify; /* Centralizar o texto */
-            padding: 50px 0; /* Adicionar espaço acima e abaixo do texto */
-        }
-		
-/* Estilos do cabeçalho */		
+
+/* Estilos do cabeçalho */
 header {
-    background-color: #333;
+    background-color: #3333337c;
     color: #fff;
     padding: 10px 0;
     position: fixed;
-    top: 0;
+    top: 0px;
     width: 100%;
     z-index: 1000;
-	transition: background-color 0.3s ease;
+    transition: background-color 1.0 ease;
+
 }
+
 header h1 {
     margin: 0;
 }
@@ -72,17 +71,18 @@ nav ul {
 nav ul li {
     display: inline;
     margin-right: 20px;
+    margin-top: 10px;
 }
 
- nav ul li a {
-            color: #fff;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-        nav ul li a:hover {
-            color: #ffd700;
-        }
-		
+nav ul li a {
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffd700;
+}
+
 .banner {
     background-image: url('banner.jpg');
     background-size: cover;
@@ -92,7 +92,7 @@ nav ul li {
     align-items: center;
     justify-content: center;
     color: #fff;
-	text-align: center;
+    text-align: center;
     padding: 100px 0;
 }
 
@@ -101,9 +101,23 @@ nav ul li {
     margin-bottom: 20px;
     margin-top: 0;
 }
+
 .banner p {
     font-size: 1.2rem;
 }
+
+.texto-banner {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.texto-banner h2,
+.texto-banner p {
+    color: #fff;
+    /* Muda a cor do texto para branco */
+}
+
 
 .btn {
     background-color: #333;
@@ -130,14 +144,21 @@ nav ul li {
     margin-bottom: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
-	width: calc(33.33% - 20px); /* Definindo a largura de cada cartão */
-    margin-bottom: 20px; /* Espaçamento entre os cartões */
-    box-sizing: border-box; /* Garantir que a largura do cartão inclua margens e preenchimentos */
-    display: inline-block; /* Exibir os cartões em linha */
-    vertical-align: top; /* Alinhar os cartões ao topo */
+    width: calc(33.33% - 20px);
+    /* Definindo a largura de cada cartão */
+    margin-bottom: 20px;
+    /* Espaçamento entre os cartões */
+    box-sizing: border-box;
+    /* Garantir que a largura do cartão inclua margens e preenchimentos */
+    display: inline-block;
+    /* Exibir os cartões em linha */
+    vertical-align: top;
+    /* Alinhar os cartões ao topo */
     border: 1px solid #ccc;
     padding: 10px;
 }
+
+
 
 .card:hover {
     transform: translateY(-5px);
@@ -146,30 +167,86 @@ nav ul li {
 .card img {
     width: 100%;
     border-radius: 5px;
-	height: auto;
-}
-.card {
-            width: 300px; /* Largura do cartão */
-            border: 1px solid #ccc;
-            padding: 10px;
-        }
-		
-/* Estilos da seção Quem Somos */
-.quem-somos {
-    background-color: #f4f4f4;
-    padding: 50px 0;
+    height: auto;
 }
 
-/* Estilos da seção História */
-.historia {
-    background-color: #e9e9e9;
+.card {
+    width: 300px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+
+.quem-somos{
+    background-color: #fafafa;
     padding: 50px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.historia {
+   background-color: rgba(0, 0, 0, 0.507);
+   padding: 50px 0;
+}
+
+.img__quemsomos{
+    width: 35%;
+    height: 30%;
+}
+.quem-somos__conteudo {
+    box-shadow: 6px 8px 20px 0px;
+    padding: 45px;
+    width: 60%;
+    /* background-color: #000000c2; */
+    border-radius: 20px;
+    /* color: white; */
+}
+
+
+.historia__conteudo{
+    box-shadow: 6px 8px 20px 0px;
+    padding: 45px;
+    width: 84%;
+    background-color: #ffffffc2; 
+    border-radius: 20px;
+    color: rgb(0, 0, 0); 
 }
 
 /* Estilos da seção Produtos */
-.produtos {
-    padding: 50px 0;
+
+.btn-produtos {
+    background-color: #070707;
+    color: #d3c503;
+    border: 2px solid transparent;
+    padding: 12px 10px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+    height: 10%;
+    
 }
+
+.btn-produtos:hover {
+    background-color: #d3c503;
+    color: #000000;
+    border-color: #000000;
+    
+}
+.btn-comprar {
+    background-color: #4CAF50; 
+    color: white; 
+    padding: 10px 20px; 
+    text-decoration: none;
+    display: inline-block; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+}
+
+.btn-comprar:hover {
+    background-color: #45a049; 
+
+}
+
 .produtos .card {
     margin-bottom: 20px;
     background-color: #fff;
@@ -182,12 +259,14 @@ nav ul li {
     max-width: 100%;
     border-radius: 5px;
 }
+
 /* Estilos da seção Contato */
 .contato {
     padding: 50px 0;
-   background-color: #f9f9f9;
+    background-color: #f9f9f9;
     text-align: center;
 }
+
 .contato .form input,
 .contato .form textarea,
 .contato .form button {
@@ -209,7 +288,7 @@ nav ul li {
 }
 
 .form button {
-    background-color: #333;
+    background-color: #000000;
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -221,13 +300,13 @@ nav ul li {
 .form button:hover {
     background-color: #555;
 }
-h2 {
-            text-align: center; /* Alinhar o título centralizado */
-        }
 
-/* Estilos do rodapé */
+h2 {
+    text-align: center;
+}
+
 footer {
-    background-color: #333;
+    background-color: #000000;
     color: #fff;
     text-align: center;
     padding: 10px 0;
@@ -235,30 +314,57 @@ footer {
     bottom: 0;
     width: 100%;
 }
-/* Media queries para tornar o site responsivo */
+
+#tagProduto {
+    text-align: center;
+    width: 100%;
+    display: block;
+    margin-top: 30x;
+    margin-bottom: 50px;
+}
+
+
 @media screen and (max-width: 768px) {
+    header {
+        padding: 5px 0; 
+    }
+
+    header h1 {
+        font-size: 1.5rem; 
+        padding: 0 10px; 
+    }
+    header nav {
+        width: 100%; 
+        text-align: center; 
+    }
+
     header nav ul {
-        text-align: center;
+        padding: 2px; 
+        margin: 0px auto; 
     }
 
     header nav ul li {
-        display: block;
-        margin: 10px 0;
+        display:inline-block; 
+        margin:  5px;
+    }
+
+    header nav ul li a {
+        font-size: 0.9rem; 
     }
 
     .banner {
-        padding: 80px 0;
+        padding: 50px 0; 
     }
 
     .banner h2 {
-        font-size: 2rem;
-    }
+        font-size: 1.5rem; 
 
     .banner p {
-        font-size: 1rem;
+        font-size: 0.9rem; 
     }
 
     .produtos .card {
-        width: 100%;
+        width: 100%; 
     }
+}
 }

@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Opel Ferramentas e EPIS - Loja de Ferramentas em Ponta Grossa, PR</title>
-   <link rel="stylesheet" href="styles.css"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
 
 </head>
 
@@ -27,54 +28,81 @@
 
     <section id="home" class="banner">
         <div class="container">
-            <h2>Bem-vindo à Opel Ferramentas e EPIS</h2>
-            <p>Sua loja de ferramentas e equipamentos de proteção individual em Ponta Grossa, PR.</p>
-            <a href="#produtos" class="btn">Ver Produtos</a>
+            <!-- Novo div container para o h2 e p com a classe .texto-banner -->
+            <div class="texto-banner">
+                <h2>Bem-vindo à Opel Ferramentas e EPIS</h2>
+                <p>Sua loja de ferramentas e equipamentos de proteção individual em Ponta Grossa, PR.</p>
+            </div>
+            <a href="#produtos" class="btn btn-produtos">Ver Produtos</a>
         </div>
     </section>
 
-    <section id="quem-somos" class="quem-somos">
-        <div class="container">
-            <h2>Quem Somos</h2>
-			<p>Somos a Opel Ferramentas e EPIS, uma empresa dedicada a fornecer ferramentas de qualidade e equipamentos de proteção individual para profissionais e empresas em Ponta Grossa, PR. Desde a nossa fundação em 2005, temos nos comprometido com a excelência em produtos e serviços para garantir a segurança e eficiência de nossos clientes.</p>
-			<p>Nossa equipe é formada por profissionais experientes e capacitados, prontos para oferecer o melhor atendimento e suporte técnico aos nossos clientes. Trabalhamos com as melhores marcas do mercado para garantir a qualidade e confiabilidade de nossos produtos.</p>
-			<p>Na Opel Ferramentas e EPIS, valorizamos a segurança, a inovação e a satisfação do cliente. Estamos sempre em busca de soluções eficientes e tecnologicamente avançadas para atender às necessidades do mercado.</p>
-        </div>
-    </section>
-
-    <section id="historia" class="historia">
-        <div class="container">
-            <h2>História da Empresa</h2>
-			<p>A Opel Ferramentas e EPIS foi fundada em 2005 por João Silva e Maria Oliveira, dois empreendedores apaixonados por ferramentas e equipamentos de proteção individual. A empresa começou como uma pequena loja de ferramentas localizada no centro de Ponta Grossa, PR, oferecendo uma variedade de produtos para profissionais da construção civil, mecânicos e outros setores.</p>
-			<p>Com o passar dos anos, a Opel Ferramentas e EPIS expandiu suas operações, aumentou seu catálogo de produtos e ganhou reconhecimento por sua qualidade e atendimento ao cliente. Em 2010, a empresa inaugurou sua primeira filial na cidade vizinha de Castro, ampliando sua presença na região.</p>
-			<p>Atualmente, a Opel Ferramentas e EPIS é uma referência no mercado de ferramentas e equipamentos de proteção individual em Ponta Grossa e região. Com uma equipe dedicada e uma vasta gama de produtos de alta qualidade, estamos comprometidos em fornecer soluções eficientes e seguras para nossos clientes.</p>
-   </div>
-    </section>
 
     <section id="produtos" class="produtos">
         <div class="container">
-            <h2>Nossos Produtos</h2>
-			
+            <h2 id="tagProduto">Nossos Produtos</h2>
+
             <div class="card">
                 <img src="ferramenta1.jpg" alt="Ferramenta 1">
                 <h3>Ferramenta 1</h3>
                 <p>Descrição da Ferramenta 1.</p>
                 <p>R$ 100,00</p>
+                <a href="#comprar" class="btn btn-comprar">Comprar</a>
             </div>
             <div class="card">
                 <img src="ferramenta2.jpg" alt="Ferramenta 2">
                 <h3>Ferramenta 2</h3>
                 <p>Descrição da Ferramenta 2.</p>
                 <p>R$ 120,00</p>
+                <a href="#comprar" class="btn btn-comprar">Comprar</a>
             </div>
             <div class="card">
                 <img src="ferramenta3.jpg" alt="Ferramenta 3">
                 <h3>Ferramenta 3</h3>
                 <p>Descrição da Ferramenta 3.</p>
                 <p>R$ 150,00</p>
+                <a href="#comprar" class="btn btn-comprar">Comprar</a>
             </div>
         </div>
     </section>
+
+    <section id="quem-somos" class="quem-somos">
+        <div class="container quem-somos__conteudo">
+            <h2>Quem Somos</h2>
+            <p>Somos a Opel Ferramentas e EPIS, uma empresa dedicada a fornecer ferramentas de qualidade e equipamentos
+                de proteção individual para profissionais e empresas em Ponta Grossa, PR. Desde a nossa fundação em
+                2005, temos nos comprometido com a excelência em produtos e serviços para garantir a segurança e
+                eficiência de nossos clientes.</p>
+            <p>Nossa equipe é formada por profissionais experientes e capacitados, prontos para oferecer o melhor
+                atendimento e suporte técnico aos nossos clientes. Trabalhamos com as melhores marcas do mercado para
+                garantir a qualidade e confiabilidade de nossos produtos.</p>
+            <p>Na Opel Ferramentas e EPIS, valorizamos a segurança, a inovação e a satisfação do cliente. Estamos sempre
+                em busca de soluções eficientes e tecnologicamente avançadas para atender às necessidades do mercado.
+            </p>
+        </div>
+        <div class="container img__quemsomos">
+            <img src="grupo_opel.jpg" alt="">
+        </div>
+    </section>
+
+    <section id="historia" class="historia">
+        <div class="container historia__conteudo">
+            <h2>História da Empresa</h2>
+            <p>A Opel Ferramentas e EPIS foi fundada em 2005 por João Silva e Maria Oliveira, dois empreendedores
+                apaixonados por ferramentas e equipamentos de proteção individual. A empresa começou como uma pequena
+                loja de ferramentas localizada no centro de Ponta Grossa, PR, oferecendo uma variedade de produtos para
+                profissionais da construção civil, mecânicos e outros setores.</p>
+            <p>Com o passar dos anos, a Opel Ferramentas e EPIS expandiu suas operações, aumentou seu catálogo de
+                produtos e ganhou reconhecimento por sua qualidade e atendimento ao cliente. Em 2010, a empresa
+                inaugurou sua primeira filial na cidade vizinha de Castro, ampliando sua presença na região.</p>
+            <p>Atualmente, a Opel Ferramentas e EPIS é uma referência no mercado de ferramentas e equipamentos de
+                proteção individual em Ponta Grossa e região. Com uma equipe dedicada e uma vasta gama de produtos de
+                alta qualidade, estamos comprometidos em fornecer soluções eficientes e seguras para nossos clientes.
+            </p>
+        </div>
+    </section>
+
+
 
     <section id="contato" class="contato">
         <div class="container">
@@ -88,18 +116,18 @@
         </div>
     </section>
 
-   <footer>
+    <footer>
         <p>&copy; 2024 Opel Ferramentas e EPIS - Ponta Grossa, PR</p>
     </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
     <script>
-        // Efeito de cabeçalho fixo
         window.addEventListener('scroll', () => {
             const header = document.querySelector('header');
-            header.classList.toggle('scroll', window.scrollY > 0);
+            header.classList.toggle('scroll', window.scrollY > 10);
         });
 
-        // Script para mostrar mensagem ao enviar o formulário
         document.getElementById('form-contato').addEventListener('submit', (event) => {
             event.preventDefault();
             alert('Formulário enviado com sucesso!');
