@@ -102,6 +102,19 @@ nav ul li a:hover {
     margin-top: 0;
 }
 
+.fb-page-container {
+        position: fixed;
+        left: 10px; /* ajuste a posição conforme necessário */
+        bottom: 10px; /* ajuste a posição conforme necessário */
+        z-index: 9999;
+    }
+
+    /* Ajuste o estilo do botão conforme necessário */
+ .fb-page-container .fb-page {
+        border: none; /* Remove a borda padrão */
+    }
+
+
 .banner p {
     font-size: 1.2rem;
 }
@@ -300,9 +313,10 @@ nav ul li a:hover {
 .form button:hover {
     background-color: #555;
 }
-.fb-page-custom {
-    position: absolute;
-    top: 50px; /* Ajuste a distância do topo conforme necessário */
+
+.facebook-container-bottom-right {
+    position: fixed;
+    bottom: 20px; /* Ajuste a distância do fundo conforme necessário */
     right: 20px; /* Ajuste a distância da direita conforme necessário */
     z-index: 1000; /* Certifique-se de que o plugin esteja acima de outros elementos */
     transform: translateX(0); /* Garante que a transição seja suave */
