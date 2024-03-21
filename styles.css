@@ -300,6 +300,13 @@ nav ul li a:hover {
 .form button:hover {
     background-color: #555;
 }
+.fb-page-custom {
+    position: absolute;
+    top: 50px; /* Ajuste a distância do topo conforme necessário */
+    right: 20px; /* Ajuste a distância da direita conforme necessário */
+    z-index: 1000; /* Certifique-se de que o plugin esteja acima de outros elementos */
+    transform: translateX(0); /* Garante que a transição seja suave */
+}
 
 h2 {
     text-align: center;
