@@ -201,6 +201,8 @@ nav ul li a:hover {
     /* background-color: #000000c2; */
     border-radius: 20px;
     /* color: white; */
+    transition: all 0.3s ease;
+
 }
 .quem-somos__conteudo:hover {
     transform: translateY(-5px);
@@ -214,6 +216,8 @@ nav ul li a:hover {
     background-color: #ffffffc2;
     border-radius: 20px;
     color: rgb(0, 0, 0);
+    transition: all 0.3s ease;
+
 }
 .historia__conteudo:hover {
     transform: translateY(-5px);
@@ -231,6 +235,8 @@ nav ul li a:hover {
     /* background-color: #000000c2; */
     border-radius: 20px;
     /* color: white; */
+    transition: all 0.3s ease;
+
 
 }
 
@@ -358,6 +364,8 @@ h2 {
     font-size: 16px;
     border-radius: 20px;
     height: 90%;
+    transition: all 0.3s ease; 
+
 }
 
 .localiza:hover {
@@ -382,6 +390,14 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
+}
+
+.facebook-container-bottom-right {
+    position: fixed;
+    bottom: 20px; /* Ajuste a distância do fundo conforme necessário */
+    right: 20px; /* Ajuste a distância da direita conforme necessário */
+    z-index: 1000; /* Certifique-se de que o plugin esteja acima de outros elementos */
+    transform: translateX(0); /* Garante que a transição seja suave */
 }
 
 @media screen and (max-width: 768px) {

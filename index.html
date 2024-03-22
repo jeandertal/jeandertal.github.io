@@ -157,5 +157,38 @@
         });
     </script>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script>
+    // Inicialize o Owl Carousel quando o documento estiver pronto
+    document.addEventListener('DOMContentLoaded', function () {
+        // Selecione o elemento que contém os cards de produtos
+        const produtosCarousel = document.querySelector('.produtos .container');
+        // Inicialize o Owl Carousel no elemento selecionado
+        if (produtosCarousel) {
+            $(produtosCarousel).owlCarousel({
+                loop: true,
+                margin: 20,
+                nav: true,
+                dots: false,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 2
+                    },
+                    1000: {
+                        items: 3
+                    }
+                }
+            });
+        }
+    });
+</script>
+<!-- SDK do Facebook -->
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v12.0" nonce="Wf3GmRjz"></script>
+
+</body>
 
 </html>
