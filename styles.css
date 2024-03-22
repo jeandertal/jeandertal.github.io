@@ -22,14 +22,13 @@ body {
 
 /* Estilos do cabeçalho */
 header {
-    background-color: #3333337c;
+    background-color: #000000;
     color: #fff;
     padding: 10px 0;
     position: fixed;
     top: 0px;
     width: 100%;
     z-index: 1000;
-    transition: background-color 1.0 ease;
 
 }
 
@@ -60,7 +59,7 @@ header nav ul li a:hover {
 }
 
 .scroll {
-    background-color: #222;
+    background-color: #22222288;
 }
 
 nav ul {
@@ -177,22 +176,24 @@ nav ul li a:hover {
 }
 
 
-.quem-somos{
+.quem-somos {
     background-color: #fafafa;
     padding: 50px 0;
     display: flex;
     flex-direction: row;
     align-items: center;
 }
+
 .historia {
-   background-color: rgba(0, 0, 0, 0.507);
-   padding: 50px 0;
+    background-color: rgba(255, 251, 0, 0.877);
+    padding: 50px 0;
 }
 
-.img__quemsomos{
+.img__quemsomos {
     width: 35%;
     height: 30%;
 }
+
 .quem-somos__conteudo {
     box-shadow: 6px 8px 20px 0px;
     padding: 45px;
@@ -201,16 +202,44 @@ nav ul li a:hover {
     border-radius: 20px;
     /* color: white; */
 }
+.quem-somos__conteudo:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
 
-
-.historia__conteudo{
+.historia__conteudo {
     box-shadow: 6px 8px 20px 0px;
     padding: 45px;
     width: 84%;
-    background-color: #ffffffc2; 
+    background-color: #ffffffc2;
     border-radius: 20px;
-    color: rgb(0, 0, 0); 
+    color: rgb(0, 0, 0);
 }
+.historia__conteudo:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.contato {
+    align-items: end;
+}
+
+.contato__conteudo {
+    box-shadow: 6px 8px 20px 0px;
+    padding: 45px;
+    width: 60%;
+    /* background-color: #000000c2; */
+    border-radius: 20px;
+    /* color: white; */
+
+}
+
+#tagContato {
+    display: inline-block;
+
+}
+
+
 
 /* Estilos da seção Produtos */
 
@@ -222,28 +251,29 @@ nav ul li a:hover {
     font-weight: bold;
     transition: background-color 0.3s, color 0.3s;
     height: 10%;
-    
+
 }
 
 .btn-produtos:hover {
     background-color: #d3c503;
     color: #000000;
     border-color: #000000;
-    
+
 }
+
 .btn-comprar {
-    background-color: #4CAF50; 
-    color: white; 
-    padding: 10px 20px; 
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
     text-decoration: none;
-    display: inline-block; 
-    border-radius: 5px; 
-    cursor: pointer; 
-    transition: background-color 0.3s ease; 
+    display: inline-block;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .btn-comprar:hover {
-    background-color: #45a049; 
+    background-color: #45a049;
 
 }
 
@@ -260,13 +290,17 @@ nav ul li a:hover {
     border-radius: 5px;
 }
 
-/* Estilos da seção Contato */
 .contato {
+    background-color: #fafafa;
     padding: 50px 0;
-    background-color: #f9f9f9;
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
-
+.contato__conteudo:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
 .contato .form input,
 .contato .form textarea,
 .contato .form button {
@@ -305,6 +339,41 @@ h2 {
     text-align: center;
 }
 
+
+
+#tagProduto {
+    text-align: center;
+    width: 100%;
+    display: block;
+    margin-top: 30x;
+    margin-bottom: 50px;
+}
+
+.localiza {
+    box-shadow: 6px 8px 20px 0px;
+    background-color: rgba(255, 255, 255, 0.349);
+    width: 50%;
+    padding: 45px;
+    margin: 10px;
+    font-size: 16px;
+    border-radius: 20px;
+    height: 90%;
+}
+
+.localiza:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+#img_localiza {
+    width: 90px;
+    height: 120px;
+}
+
+.widget-list {
+    line-height: 2;
+}
+
 footer {
     background-color: #000000;
     color: #fff;
@@ -315,56 +384,48 @@ footer {
     width: 100%;
 }
 
-#tagProduto {
-    text-align: center;
-    width: 100%;
-    display: block;
-    margin-top: 30x;
-    margin-bottom: 50px;
-}
-
-
 @media screen and (max-width: 768px) {
     header {
-        padding: 5px 0; 
+        padding: 5px 0;
     }
 
     header h1 {
-        font-size: 1.5rem; 
-        padding: 0 10px; 
+        font-size: 1.5rem;
+        padding: 0 10px;
     }
+
     header nav {
-        width: 100%; 
-        text-align: center; 
+        width: 100%;
+        text-align: center;
     }
 
     header nav ul {
-        padding: 2px; 
-        margin: 0px auto; 
+        padding: 2px;
+        margin: 0px auto;
     }
 
     header nav ul li {
-        display:inline-block; 
-        margin:  5px;
+        display: inline-block;
+        margin: 5px;
     }
 
     header nav ul li a {
-        font-size: 0.9rem; 
+        font-size: 0.9rem;
     }
 
     .banner {
-        padding: 50px 0; 
+        padding: 50px 0;
     }
 
     .banner h2 {
-        font-size: 1.5rem; 
+        font-size: 1.5rem;
 
-    .banner p {
-        font-size: 0.9rem; 
-    }
+        .banner p {
+            font-size: 0.9rem;
+        }
 
-    .produtos .card {
-        width: 100%; 
+        .produtos .card {
+            width: 100%;
+        }
     }
-}
 }
